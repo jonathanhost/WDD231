@@ -10,25 +10,37 @@ const allButton = document.querySelector("#card-all");
 const wddCourses = courses.filter(course => course.subject === "WDD");
 const cseCourses = courses.filter(course => course.subject === "CSE");
 const allCourses = courses
+const credits = document.querySelector("#credits");
 
-
+let creditsTotal = 0;
 function displayCourses(courseList) {
-    coursesContainer.innerHTML = courseList.map(course => `
-        <div class="course ${course.completed ? "completed" : ""}">
-            <h3>${course.subject} ${course.number}</h3>
-            <p>${course.title}</p>
-            <p>Credits: ${course.credits}</p>
-        </div>
-    `).join("");
-}
+    creditsTotal = 0;
 
+    coursesContainer.innerHTML = courseList.map(course => {
+        if(course.completed){creditsTotal += course.credits;};
+        
+
+        return `
+            <div class="course ${course.completed ? "completed" : ""}">
+                <h3>${course.subject} ${course.number}</h3>
+                <p>${course.title}</p>
+                <p>Credits: ${course.credits}</p>
+            </div>
+        `;
+    }).join("");
+    credits.innerHTML= `${creditsTotal}`
+};
+
+displayCourses(allCourses)
 
 wddButton.addEventListener("click", () => {
     displayCourses(wddCourses)
+    
 });
 
 cseButton.addEventListener("click", () => {
      displayCourses(cseCourses)
+    
 });
 
 allButton.addEventListener("click", () => {
