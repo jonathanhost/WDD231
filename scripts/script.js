@@ -14,22 +14,22 @@ const credits = document.querySelector("#credits");
 
 let creditsTotal = 0;
 function displayCourses(courseList) {
-    creditsTotal = 0;
 
-    coursesContainer.innerHTML = courseList.map(course => {
-        if(course.completed){creditsTotal += course.credits;};
-        
+    coursesContainer.innerHTML = courseList.map(course => `
+        <div class="course ${course.completed ? "completed" : ""}">
+            <h3>${course.subject} ${course.number}</h3>
+            <p>${course.title}</p>
+            <p>Credits: ${course.credits}</p>
+        </div>
+    `).join("");
 
-        return `
-            <div class="course ${course.completed ? "completed" : ""}">
-                <h3>${course.subject} ${course.number}</h3>
-                <p>${course.title}</p>
-                <p>Credits: ${course.credits}</p>
-            </div>
-        `;
-    }).join("");
-    credits.innerHTML= `${creditsTotal}`
-};
+    const creditsTotal = courseList.reduce(
+        (total, course) => total + course.credits,
+        0
+    );
+
+    credits.textContent = creditsTotal;
+}
 
 displayCourses(allCourses)
 

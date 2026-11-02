@@ -46,7 +46,7 @@ export const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -60,7 +60,7 @@ export const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: true
+        completed: false
     },
     {
         subject: 'WDD',
@@ -74,6 +74,6 @@ export const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     }
 ]
