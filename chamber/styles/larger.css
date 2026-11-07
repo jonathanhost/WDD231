@@ -1,0 +1,46 @@
+/* Larger screens */
+
+@media only screen and (min-width: 600px) {
+    nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0;
+}
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 1rem 2rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    #members {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #members {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+}

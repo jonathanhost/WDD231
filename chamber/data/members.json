@@ -1,0 +1,66 @@
+
+[
+    {
+        "name": "Almeida Technology",
+        "address": "Rua Central, 100, São José, SC",
+        "phone": "(48) 0000-0001",
+        "website": "https://almeidatech.example",
+        "image": "almeida-tech.png",
+        "membership": 3,
+        "industry": "Technology"
+    },
+    {
+        "name": "Costa Business Solutions",
+        "address": "Avenida Brasil, 200, São José, SC",
+        "phone": "(48) 0000-0002",
+        "website": "https://costabusiness.example",
+        "image": "costa-business.png",
+        "membership": 2,
+        "industry": "Business Consulting"
+    },
+    {
+        "name": "Floripa Digital",
+        "address": "Rua das Flores, 300, São José, SC",
+        "phone": "(48) 0000-0003",
+        "website": "https://floripadigital.example",
+        "image": "floripa-digital.png",
+        "membership": 3,
+        "industry": "Digital Marketing"
+    },
+    {
+        "name": "Sul Finance",
+        "address": "Rua do Comércio, 400, São José, SC",
+        "phone": "(48) 0000-0004",
+        "website": "https://sulfinance.example",
+        "image": "sul-finance.png",
+        "membership": 1,
+        "industry": "Finance"
+    },
+    {
+        "name": "Santa Catarina Logistics",
+        "address": "Avenida Industrial, 500, São José, SC",
+        "phone": "(48) 0000-0005",
+        "website": "https://sclogistics.example",
+        "image": "sc-logistics.png",
+        "membership": 2,
+        "industry": "Logistics"
+    },
+    {
+        "name": "Ponto Criativo",
+        "address": "Rua Criativa, 600, São José, SC",
+        "phone": "(48) 0000-0006",
+        "website": "https://pontocriativo.example",
+        "image": "pontocriativo.png",
+        "membership": 1,
+        "industry": "Design"
+    },
+    {
+        "name": "Nova Era Construções",
+        "address": "Rua da Construção, 700, São José, SC",
+        "phone": "(48) 0000-0007",
+        "website": "https://novaera.example",
+        "image": "nova-era.png",
+        "membership": 3,
+        "industry": "Construction"
+    }
+]
